@@ -13,7 +13,7 @@ const useAxios = () => {
   )
 
   const createNewUser = (data, closeForm, reset, resetObj) => {
-    const URL = `http://users-crud.academlo.tech/users/`
+    const URL = `https://users-crud.academlo.tech/users/`
     axios.post(URL, data)
       .then(res => {
         getAllUsers()
@@ -26,13 +26,13 @@ const useAxios = () => {
       })
   }
   const getAllUsers = () => {
-    const URL = `http://users-crud.academlo.tech/users/`
+    const URL = `https://users-crud.academlo.tech/users/`
     axios.get(URL)
       .then(res => setUsers(res.data))
       .catch(err => sweetAlert('No se pudieron cargar los usuarios, error del servidor', 'error'))
   }
   const updateUserById = (id, data, closeForm, setUpdateUser) => {
-    const URL = `http://users-crud.academlo.tech/users/${id}/`
+    const URL = `https://users-crud.academlo.tech/users/${id}/`
     axios.patch(URL, data)
       .then(res => {
         sweetAlert('Usuario editado exitosamente','success')
@@ -43,7 +43,7 @@ const useAxios = () => {
       .catch(err => sweetAlert('No se ha podido actualizar el usuario', 'error'))
   }
   const deleteUserById = (id, setOffCardEffect) => {
-    const URL = `http://users-crud.academlo.tech/users/${id}/`
+    const URL = `https://users-crud.academlo.tech/users/${id}/`
     axios.delete(URL)
       .then(res => {
         setOffCardEffect(true)
