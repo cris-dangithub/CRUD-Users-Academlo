@@ -1,0 +1,41 @@
+.App {
+  max-width: 1020px;
+  background-color: var(--color-backgroundCard);
+  min-height: 100vh;
+  margin: auto;
+  padding: 2em 1.5em;
+}
+
+.App__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.form-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #00000075;
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.4s;
+}
+
+.form-container--close {
+  opacity: 0;
+}
+
+.users-container {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(auto-fit, 300px);
+  justify-content: center;
+}
