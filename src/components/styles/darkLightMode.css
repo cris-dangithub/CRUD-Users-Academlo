@@ -1,0 +1,48 @@
+.c-dark-mode {
+  position: relative;
+  background-color: var(--color-backgroundApp);
+
+  width: 3em;
+  aspect-ratio: 2;
+  border-radius: 1em;
+  border: var(--color-borderOutside) 1px solid;
+  padding: 0.2em;
+
+  display: flex;
+  justify-content: center;
+  transition: align-items 0.5s;
+}
+
+.dark-mode__btn-container {
+  position: relative;
+  top: 0;
+  width: 100%;
+  bottom: 0;
+}
+
+.dark-mode__btn {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: var(--color-buttonDarkmode);
+  border-radius: 1em;
+  z-index: 250;
+  transition: transform 0.2s;
+}
+.dark-mode__btn--light {
+  transform: translateX(100%);
+}
+
+.dark-mode__icons {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0 0.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  color: var(--color-icons);
+}

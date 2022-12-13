@@ -2,7 +2,7 @@
   position: relative;
   display: grid;
   gap: 1em;
-  background-color: var(--color-backgroundCard);
+  background-color: var(--color-backgroundForm);
   width: 100%;
   max-width: 300px;
   padding: 1.5em 1em;
@@ -16,6 +16,7 @@
 
 .form__title {
   font-weight: 800;
+  color: var(--color-textApp);
 }
 
 .form-body {
@@ -26,6 +27,7 @@
 
 .form__label {
   font-size: 0.8rem;
+  color: var(--color-textApp);
 }
 
 .form__input {
@@ -69,7 +71,7 @@
   width: 100%;
   height: 2.5em;
   background-color: var(--color-buttonForm);
-  color: var(--color-backgroundCard);
+  color: #fff;
   text-transform: uppercase;
   font-weight: bold;
   transition: filter 0.2s;
@@ -91,4 +93,5 @@
   max-width: 200px;
   min-width: 120px;
   width: 40%;
+  border-radius: 0.4em;
 }

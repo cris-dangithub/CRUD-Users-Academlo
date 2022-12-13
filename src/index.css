@@ -2,19 +2,51 @@
 
 :root {
   --color-closeForms: #ff0000;
-
+  /* #root */
+  --color-backgroundRoot: #d3d3d3;
+  /* App */
+  --color-backgroundApp: #fff;
+  --color-textApp: #000;
   /* CardUser */
   --color-borders: #d8d8d8;
   --color-backgroundCard: #ffffff;
-  --color-backgroundInputs: #F9FAFC;
-
+  --color-dividerCard: #d8d8d8;
+  
   /* FormUser */
+  --color-backgroundForm: #ffffff;
+  --color-backgroundInputs: #F9FAFC;
   --color-placeholders: #9e9e9e;
   --color-buttonForm: #555A88;
 
   /* EmptyUsersContainer */
   --color-icon: #6e6e6e;
-
+  /* Dark mode button */
+  --color-borderOutside: #808080;
+  --color-icons: #000;
+  --color-buttonDarkmode: #000;
+}
+.root--darkmode {
+  --color-closeForms: #ff0000;
+  /* #root */
+  --color-backgroundRoot: #23272a;
+  /* App */
+  --color-backgroundApp: #2c2f33;
+  --color-textApp: #fff;
+  /* CardUser */
+  --color-borders: #36393F;
+  --color-backgroundCard: #36393F;
+  --color-dividerCard: #757b85;
+  /* FormUser */
+  --color-backgroundForm: #424449;
+  --color-backgroundInputs: #8d929c;
+  --color-placeholders: #c9c9c9;
+  --color-buttonForm: #555A88;
+  /* EmptyUsersContainer */
+  --color-icon: #999999;
+  /* Dark mode button */
+  --color-borderOutside: #fff;
+  --color-icons: #ffdd6f;
+  --color-buttonDarkmode: #fff;
 }
 
 * {
@@ -28,7 +60,7 @@ body {
 }
 
 #root {
-  background-color: #d3d3d3;
+  background-color: var(--color-backgroundRoot);
 }
 
 h1,
